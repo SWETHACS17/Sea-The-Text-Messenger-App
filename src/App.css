@@ -1,38 +1,35 @@
 .App {
   text-align: center;
+  background-image: url('https://img.freepik.com/premium-vector/wild-whale-icon-outline-wild-whale-vector-icon-web-design-isolated-white-background-color-flat_96318-90590.jpg'); /* Replace with the actual file path */
+  background-repeat: no-repeat; /* Avoid repeating the image */
+  background-size: 25%; /* Reduce the image size to 50% of the container's width */
+  background-position: center; /* Keep the image centered */
+  background-attachment: fixed; /* Keeps the background in place while scrolling */
+  height: 100vh; /* Ensures the app container covers the full viewport height */
+  overflow-y: scroll; /* Allows scrolling for content without affecting the background */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.app__form{
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  background-color: rgb(255, 255, 255);
+  width: 80%;
+  margin: 20px;
+ 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app__formControl{
+  display: flex !important;
+  flex-direction: row !important;
+}
+.app__iconButton{
+  flex: 0;
+}
+.app__input{
+  flex:1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
